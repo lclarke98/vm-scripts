@@ -11,6 +11,7 @@ for i in `seq 1 $1`
     do
 	    gcloud compute instances create  \
           --machine-type f1-micro  \
+	  --zone=europe-west1-c \
           --metadata=p=$key,address=$a \
           --metadata-from-file  \
              startup-script=vm-script.sh  \
