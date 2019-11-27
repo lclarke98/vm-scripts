@@ -17,7 +17,8 @@ for i in `seq 1 $1`
           --scopes=https://www.googleapis.com/auth/cloud-platform\
           vm$i
     done
-
+    
+    cd
     git clone https://github.com/portsoc/distributed-master-worker
     cd distributed-master-worker
     npm install
