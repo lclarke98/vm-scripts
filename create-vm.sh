@@ -26,6 +26,6 @@ for i in `seq 1 $1`
     wait
     for i in `seq 1 $1`
     do
-	    gcloud compute instances delete vm$1 --delete-disks=all --zone=europe-west1-c
+	    gcloud compute instances delete vm$i --delete-disks=all --zone=europe-west1-c
     done
     exit 0
