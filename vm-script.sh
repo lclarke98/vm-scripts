@@ -11,6 +11,7 @@ sudo apt-get install -y git nodejs
     git clone https://github.com/portsoc/distributed-master-worker
     cd distributed-master-worker
     npm install
+    sleep 5m
     npm run client $key $address &&
 wait
 sudo poweroff
