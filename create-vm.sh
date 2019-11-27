@@ -22,6 +22,7 @@ for i in `seq 1 $1`
     git clone https://github.com/portsoc/distributed-master-worker
     cd distributed-master-worker
     npm install
+    sleep 5m
     sudo npm run server $key
     wait
     for i in `seq 1 $1`
